@@ -1,21 +1,23 @@
 // Main
 $(document).ready(function () {
 	// Phần Slider
-	$('.home-slider .owl-carousel').owlCarousel({
+	$('.owl-carousel').owlCarousel({
 		loop:true,
-		margin:10,
+		margin:0,
 		nav:true,
-		item:1,
-		responsive:{
-			0:{
-				items:1
-			},
-			768:{
-				items:1
-			},
-			1024:{
-				items:1
-			}
-		}
+		dots: false,
+		items: 1,
+		navText:['<i class="fa fa-angle-double-left"></i>','<i class="fa fa-angle-double-right"></i>']
+		// responsive:{
+		// 	0:{
+		// 		items:1
+		// 	},
+		// 	600:{
+		// 		items:3
+		// 	},
+		// 	1000:{
+		// 		items:5
+		// 	}
+		// }
 	})
 });

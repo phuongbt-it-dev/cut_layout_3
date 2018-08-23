@@ -1,23 +1,63 @@
 .home-slider
 	.owl-carousel
-/////////////////////////////////
-// Phần Slider
-/////////////////////////////////
+		position: relative
 		.item
-			position: relative
 			.title
-				height: 100%
-				width: 100%
-				+pad(1.5rem 0)
-				align-items: center
-				display: flex
-			+media-breakpoint-up(sm)
-				.title-text
+				// +pad(1.5rem)
+				h1
+					+fz(1.5rem)
+				p
+					+mar(0)
+	+media-breakpoint-up(md)
+		.owl-carousel
+			position: relative
+			.item
+				.title
 					position: absolute
 					top: 0
-					left: 0
-					margin: 4rem
+					left: 10%
+					width: 100%
+					height: 100%
+					display: flex
+					align-items: center
 					color: $whites
+					h1
+						+fz(1.5rem)
+					p
+						max-width: 50%
+						+lh(2rem)
+			.owl-nav
+				display: flex
+				align-items: center
+				justify-content: space-around
+				button
+					position: absolute
+					top: 50%
+					color: $whites
+				.disabled
+					opacity: inherit
+				.owl-prev
+					position: absolute
+					left: 0
+					+fz(4rem)
+				.owl-next
+					position: absolute
+					right: 0
+					+fz(4rem)
+				&:hover
+					button
+						background: red
+						width: 5rem
+						height: 5rem
+						border-radius: 50%
+						color: 
+						transition: .5s all ease-in-out
+				
+
+					
+
+				
+					
 
 
 
